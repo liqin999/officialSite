@@ -286,8 +286,8 @@ b {
 .base_list .tr_color{background: #f8f8f8;}
 .base_list .td_left{text-align: left;text-indent: 25px;}
 .base_list .text{font-size: 25px;color: #7ab45d;}
-/*.base_list .text em{font-size: 16px;color: #767676;;text-decoration: line-through;}*/
-.base_list .text em{text-decoration: line-through;}
+.base_list .text em{font-size: 16px;color: #767676;;text-decoration: line-through;}
+/*.base_list .text em{text-decoration: line-through;}*/
 .base_list .td_text{height: 84px;}
 
 /* 版本 */
