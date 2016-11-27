@@ -1,0 +1,48 @@
+
+body{font-family:"Microsoft Yahei",微软雅黑,arial;margin:0;color:#666;font-size:12px;background:#FFF;}
+ul,dl,dt,dd,p,h2,form{margin:0;padding:0;font-weight:normal;}
+li{list-style-type:none;}
+a{text-decoration:none;color:#666;}
+img{border:none;border-width:0;}
+/*fontSize*/
+.ft-t-14{font-size: 14px;font-weight: bold;}
+.ft-12{font-size: 12px;}
+.ft-14{font-size: 14px;}
+.ft-16{font-size: 16px;}
+.ft-18{font-size: 18px;}
+/*fontColor*/
+.ft-col-a9a9a9{color: #a9a9a9;}
+.ft-col-333{color: #333;}
+.ft-col-666{color: #666;}
+.ft-col-999{color: #999;}
+.ft-col-4587da{color: #4587da;}
+.ft-col-f13848{color: #f13848;}
+.ft-col-6a6c6f{color: #6a6c6f}
+.ft-col-6d6d6d{color: #6d6d6d;}
+/*float*/
+.f-l{float: left;}
+.f-r{float: right;}
+/*hide&show*/
+.c-hide{display: none;}
+
+/*右侧主体标题
+右侧主体部分头部标题，如果没有刷新和配置按钮，删除refreshBtn,configBtn这两个span
+<h2 class="lt-title">
+    <div class="mtitle">会员管理<span>-会员列表</span></div>
+    <span class="refreshBtn"></span>
+    <span class="configBtn"></span>
+    <div class="handleWarning handleSuccess"></div>
+</h2>
+*/
+.lt-title{padding: 15px 15px 15px 13px; margin-left: 10px; position: relative;text-align:right;line-height:20px;}
+.lt-title>.mtitle{font-size:16px;color:#6a6c6f;text-align:left;float:left;}
+.lt-title>.mtitle>span{font-size:12px;color:#6d6d6d;}
+.lt-title>span{display:inline-block;width:20px;height:20px;background:url(../images/mainSprite.png) no-repeat 0 0;cursor:pointer;margin-left:6px;}
+.lt-title>span.refreshBtn{background-position:2px 3px;}
+.lt-title>span.configBtn{background-position:-37px 3px;}
+/*3个请求状态*/
+.handleWarning{height: 30px; line-height: 30px; padding: 0 35px 0 51px; color: #4c4b4c; font-size: 14px; position: absolute; top: 50%; left: 50%; margin-top: -16px;display: none;z-index:100;}
+.handleSuccess{border: 1px solid #c0d4ed; margin-left: -74px; background: #f0f3fb url(../images/icon01.png) no-repeat 32px center;}
+.handleDefault{border: 1px solid #f9bebe; margin-left: -102px; background: #ffe1e1 url(../images/icon02.png) no-repeat 32px center;}
+.handleLoad{border: 1px solid #a2c3ec; margin-left: -95px; background: #fff url(../images/icon03.png) no-repeat 26px center;}
+/*标题结束*/

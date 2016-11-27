@@ -1,0 +1,44 @@
+
+/*
+    2014/10/14
+*/
+/*reset*/
+
+/* 防止用户自定义背景颜色对网页的影响 */
+/* 始终不显示横向滚动条 */
+body{overflow-x:hidden;}
+/*统一输入框*/
+input,textarea,select{font-size:100%;outline: none;}
+/* 内外边距重置 */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,form,input{margin:0; font-family:"\5FAE\8F6F\96C5\9ED1";}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {margin: 0;padding: 0;}
+input,ul,ol{padding: 0;}
+/*统一后三号标题*/
+h4,h5,h6{font-size:1em;}
+/* 让链接不显示下划线 */
+a {color: #666;}
+a,a:hover{ text-decoration: none;}
+a:hover{ color: #1354a4;}
+/*清除不常用样式*/
+ul,ol{ list-style-type:none;}
+:focus,:active{outline: none;}
+fieldset,img{ border:0;}
+table{border-collapse: collapse;border-spacing:0;}
+input[type="text"]{line-height: normal;}
+button,a,input[type="button"],input[type="submit"]{cursor:pointer;}
+/* 统一上标和下标 */
+sub, sup {font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+/*iebug*/
+th{ text-align:inherit;}
+iframe{display:block;}
+
+
+/*从300上弄下里的字号,增加line-height*/
+body{background:#fff; font-size:12px;line-height: 1.42858;color:#333; font-family:Arial,"Microsoft YaHei","微软雅黑","宋体"; font-family:"Microsoft YaHei","微软雅黑","宋体"\9; font-weight:normal;}
+
+.container{
+	width: 1180px;
+	position: relative;
+}

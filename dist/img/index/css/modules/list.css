@@ -1,0 +1,170 @@
+/*列表顶部控制按钮*/
+.mainCont{border:1px solid #ddd;}
+.mainCtrl{height:28px;padding:10px;position:relative;z-index:2;}
+.mainCtrl>ul{padding-left:10px;float:left;}
+.mainCtrl>ul li{float:left;margin-right:10px;position:relative;}
+.mainCtrl>ul span{border:1px solid #DDD;display:block;margin-right:-2px;padding:0px 15px;line-height:26px;font-size:14px;border-radius:2px;cursor:pointer;background:#ededed;}
+.mainCtrl>ul span:hover{border:1px solid #4587da;color:#4587da;}
+.mainCtrl>ul li span.ex{position:relative;padding-right:25px;}
+.mainCtrl>ul li span.ex.sel{border:1px solid #4587da;color:#4587da;background:none;border-bottom:none;border-radius:2px 2px 0px 0px;}
+.mainCtrl>ul li span.ex i{display:block;position:absolute;width:10px;height:4px;overflow:hidden;background:url(../images/mainSprite.png) no-repeat 0px -54px;top:11px;right:6px;}
+.mainCtrl>ul li span.ex.sel i{background-position:0px -31px;}
+.mainCtrl>ul li>dl,.mainCtrl>ul li>div{border:1px solid #4587da;border-top:none;background:#FFF;position:absolute;top:27px;left:0px;display:none;width:100%;}
+.mainCtrl>ul li dd{padding:2px 4px;line-height:20px;font-size:12px;cursor:pointer;}
+.mainCtrl>ul li dd:hover,.mainCtrl>ul li dd.sel{background:#4587da;color:#FFF;}
+.mainCtrl>ul li>div dl{max-height:120px;overflow:auto;}
+.mainCtrl>ul li>div a{display:block;background:#eee;line-height:20px;text-align:center;}
+.mainCtrl>ul li dd i{display:inline-block;width:12px;height:12px;overflow:hidden;background:url(../images/mainSprite.png) no-repeat -40px -75px;vertical-align:-1px;margin-right:3px;}
+.mainCtrl>ul li dd i.checked{background-position:-40px -53px;}
+
+/*控制行右侧搜索框*/
+.listSearch{float:left;position:relative;border-radius:0px;width:80px;}
+.mainCtrl>div{float:right;line-height:26px;border-radius:2px;position:relative;margin-right:10px;}
+.memSearch{float:left;position:relative;border-radius:0px;}
+.searchType{padding:0px 20px 0 4px;cursor:pointer;color:#a9a9a9;position:relative;display:block;}
+.searchType i{display:block;position:absolute;right:6px;top:11px;width:10px;height:4px;overflow:hidden;background:url(../images/mainSprite.png) no-repeat 0px -54px;}
+.searchType:hover{}
+.typeList{position:absolute;left:-1px;top:27px;border:1px solid #DDD;border-top:none;background:#FFF;display:none;width:100%;}
+.typeList li{padding:2px 4px;line-height:20px;font-size:12px;cursor:pointer;}
+.searchTxt{float:left;position:relative;border:1px solid #DDD;border-width:1px 0px;}
+.searchTxt input{display:block;line-height:16px;padding:5px 3px;outline:none;width:110px;border:none;padding-right: 22px}
+.searchTxt i{display:block;width:17px;height:17px;background:url(../images/mainSprite.png) no-repeat -40px -27px;position:absolute;top:-7px;right:4px;cursor:pointer;}
+.searchBtn{float:left;padding:0px 15px;background:#ededed;cursor:pointer;border:1px solid #DDD;}
+
+.tableCont{}
+.tableTitle{width:100%;}
+.checkTip{line-height:27px;top:0px;height:27px;background:#E8EFFF;border-bottom:1px solid #4587da;display:none;position:absolute;left:0;width:100%;text-indent:10px;}
+.selectAll{color:#4587da;cursor:pointer;}
+.tableTitle th{font-weight:normal;height:28px;line-height:28px;background:#EEE;text-align:left;color:#333;border-bottom:1px solid #ddd;}
+.tclist{position:relative;overflow:auto;height:560px;border-bottom:1px solid #DDD;z-index:1;}
+.tableList{width:100%;}
+.tableList td{height:27px;line-height:27px;border-bottom:1px solid #ddd;}
+.tableTitle th.t-center,.tableList td.t-center{text-align:center;}
+.tableList td .viewBtn{display:inline-block;width:12px;height:12px;background:url(../images/mainSprite.png) no-repeat 0 -76px;cursor:pointer;}
+.tableList td a{color:#4587da;cursor: pointer}
+.tableList td a:hover{text-decoration:underline;}
+.tableList td a.del-link{margin-left:15px;}
+.tableList td.use{vertical-align:middle;}
+.tableList td.use i{display:block;width:15px;height:15px;background:url(../images/mainSprite.png) no-repeat 0 0;margin-top:3px;}
+.tableList td.use i.yes{background-position:-125px -198px;}
+.tableList td.use i.no{background-position:-66px -198px;}
+
+/*分页*/
+.pages{padding:15px 10px;position:relative;z-index:2;}
+.pagePer,.pageList{width:60px;}
+.pagePer ul,.pageList ul{bottom:26px;border-top:1px solid #4587da;max-height:260px;overflow:auto;}
+.pageLeft{float:left;margin-right:50px;}
+.pages>a{display:inline-block;margin:0 6px;color:#4587da;text-decoration:underline;}
+.pages>a.dis{text-decoration:none;color:#666;}
+
+
+/***高级筛选设置开始***/
+.searchSet{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #cfcfd1;
+    background: #edecf1;
+    width: 210px;
+}
+.searchHead{
+    height: 42px;
+    line-height: 42px;
+    margin-left: 30px;
+
+}
+.searchSetTop{
+    cursor: pointer;
+    height: 27px;
+    line-height: 27px;
+    color: #4587db;
+    /* border: 1px solid forestgreen;*/
+    margin-left: 7px;
+}
+.searchDownIcon{margin-left: 94px;cursor: pointer;cursor: pointer}
+.searchCon1{width: 179px;border:1px solid #4587db;margin-left: 10px;position: absolute;z-index: 999;display: none}
+.searchLI{
+    cursor: pointer;
+    margin-top: 2px;
+    padding-left: 18px;
+    width: 162px;
+    height: 16px;
+    line-height: 16px;
+}
+.searchMar7{
+    cursor: pointer;
+    margin-left: 7px;
+}
+.searchMar10{
+    margin-top: 5px;
+}
+.bb-col-4587db{
+    background: #4587db;
+}
+.bg-col-fff{
+    background: #fff;
+}
+.search-top{
+    margin-left: 9px;
+    margin-bottom: 11px;
+}
+.search-f{
+    width:178px ;
+    height: 24px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.searchTitle{
+    float: left;
+    width: 70px;
+    height: 24px;
+    line-height: 24px;
+    text-align: right;
+}
+.search-top,.search-list{
+    margin-bottom: 10px;
+}
+.select-t{
+    margin-top: 3px;
+    height: 24px;
+    width: 55px;
+    border: 1px solid #ddd;
+}
+.select-f{
+    margin-top: 3px;
+    height: 24px;
+    width: 125px;
+    border: 1px solid #ddd;
+}
+.margin-top-3{
+    margin-top: 3px;
+}
+.searchIcon{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    margin-top:13px ;
+    margin-left:-20px;
+    background: url("../images/searchIcon.png") no-repeat 100% 100%;
+}
+.searchClose{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    margin-top:13px ;
+    margin-left:82px;
+    background: url("../images/searchClose.png") no-repeat 100% 100%;
+}
+.filter-btn{margin:36px auto; width:100%;text-align: center;}
+.input-w158{width: 158px}
+.input-w98{width: 98px}
+.input-w38{width: 38px}
+.input-w36{width: 36px}
+.input-w60{width: 60px}
+.margin-B5{margin: 5px auto}
+.addressShow{ white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.addressListCon{ max-width: 56px;padding-left: 0;padding-right: 0;float:left }
+.trueSel{display:inline-block;width:12px;height:12px;background:url(../images/mainSprite.png) no-repeat -280px -193px;cursor:pointer;}
+.icon-down-img{float: right;margin-top: 12px;margin-right:8px}
+/***高级筛选设置结束***/

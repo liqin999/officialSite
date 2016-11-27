@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title> 
+    <link rel="stylesheet" type="text/css" href="/dist/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/pages/index/head.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/pages/index/footer.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/pages/Shopping/shopping.css">
+    <script type="text/javascript" src="/library/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/dist/js/index.js"></script>
+    <script type="text/javascript" src="/dist/js/pages/index/init.js"></script>
+    <script type="text/javascript" src="/dist/js/pages/Shopping/shop_com.js"></script>
+</head>
+
+<body>
+    <div class="y_container">
+        <!--#include virtual="/public/header.html"-->
+    </div>
+    <div class="productBuy">
+        <div class="yqm">
+            <p class="tit"><img src="../../dist/img/Shopping/head2.png" alt=""></p>
+        </div>
+        <div class="pay_box">
+            <div class="symbol"><img src="../../dist/img/Shopping/gou.png"></div>
+            <div class="prompt">
+                <div class="success">支付成功！</div>
+                <div class="info">
+                    <p><span>你的订单号：</span><span>D000100025</span></p>
+                    <p><span>需要支付：</span><span>559.00元</span></p>
+                    <a href="">查看订单详情</a>
+                </div>
+                <div class="button">进入企业管理中心></div>
+            </div>
+        </div>
+    </div>
+    <div class="y_container">
+        <!--#include virtual="/public/footer.html"-->
+    </div>
+    <div class="shape" style="background: rgba(0,0,0,.5);position: fixed;left: 0px;top: 0px;z-index: 1;height: 100%;width: 100%;">
+        
+        <div class="pop_window">
+            <div class="title">支付结果</div>
+            <div class="line"></div>
+            <div class="button"><span class="green">支付成功</span><span class="red">支付失败，重新支付</span></div>
+            <div class="questions">
+                <p class="title"><i class="faq"></i>问题解答</p>
+                <div class="ques">
+                    <p class="ask">1.网上银行页面打不开，或者打开无法支付，怎么办？<span class="open">展开</span></p>
+                    <p class="ans"></p>
+                </div>
+                <div class="ques">
+                    <p class="ask">2.总是支付失败，提示银行卡限额怎么办？<span class="fold">收起</span></p>
+                    <p class="ans">答：银行卡限额是指某银行对该行银行卡单笔消费额度的限制，如果您的银行卡限 额不足，您可以充值去哪儿网余额账户，充值足额后再使用余额支付来完成交易。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="/public/tongji.html"-->
+</body>
+</html>

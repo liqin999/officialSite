@@ -1,0 +1,253 @@
+@charset "UTF-8";
+body {
+    font-family: "Microsoft Yahei", 微软雅黑, arial;
+    margin: 0;
+    color: #666;
+    font-size: 12px;
+    background: #FFF;
+}
+
+ul,
+dl,
+dt,
+dd,
+p,
+h2,
+form {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+em,
+i,
+b {
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 头部 */
+.productBuy {
+    padding: 135px 0 50px 0;
+}
+.productBuy .tit {
+    text-align: center;
+    margin-bottom: 75px;
+}
+.buy_box {
+    width: 920px;
+    margin: 0 auto;
+    background: #f2fded;
+    padding: 90px;
+    margin-bottom: 50px;
+}
+.buy_box .logo {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url(../../../img/Shopping/moren.png) no-repeat;
+}
+.buy_box .logo:hover {
+    background: url(../../../img/Shopping/huaguo.png) no-repeat;
+}
+.buy_box .line {
+    display: inline-block;
+    border-left: 1px dashed #7ab45d;
+    height: 138px;
+    vertical-align: middle;
+    margin: 0px 65px;
+}
+/* 购买选项 */
+.buy_box .choose {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.buy_box .choose .name {
+    color: #446d30;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.buy_box .choose label {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    position: relative;
+    margin-right: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.buy_box .choose label:last-child {
+    margin: 0px;
+}
+.buy_box .choose label input {
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.buy_box .choose label span {
+    display: block;
+    height: inherit;
+    border: 1px solid #959595;
+    line-height: 40px;
+    text-align: center;
+    color: #797979;
+}
+.buy_box .choose label:hover span {
+    border: 1px solid #446d30;
+    color: #446d30;
+}
+.buy_box .choose label input[type="radio"]:checked + span {
+    border: 1px solid #446d30;
+    color: #446d30;
+}
+.buy_box .choose label input[type="radio"]:checked + span:after {
+    content: "";
+    background: url(../../../img/Shopping/selected.png) no-repeat;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    right: -3px;
+    bottom: -4px;
+    display: inline-block;
+}
+.buy_box .choose .version {
+    margin-bottom: 20px;
+}
+.buy_box .choose .time {
+    margin-bottom: 20px;
+}
+.buy_box .choose .way .ebay {
+    background: url(../../../img/Shopping/alibaba.png) no-repeat;
+    background-position: center center;
+    background-color: #fff;
+}
+/* 支付详情 */
+.price_box {
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.price_box .pay {
+    float: right;
+    margin-right: 100px;
+    font-size: 14px;
+    text-align: right;
+}
+.price_box .pay p {
+  display: inline-block;
+  font-size: 14px;
+  color: #444444;
+}
+.price_box .pay .selling {
+  margin-bottom: 10px;
+}
+.price_box .pay .selling p:first-child {
+  margin-right: 35px;
+}
+.price_box .pay .selling .sellprice {
+  color: #7ab55c;
+  font-size: 18px;
+}
+.price_box .pay .original {
+  margin-bottom: 10px;
+}
+.price_box .pay .original .icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url(../../../img/Shopping/icon.png) no-repeat;
+  vertical-align: middle;
+}
+.price_box .pay .original p {
+  margin-left: 35px;
+}
+.price_box .pay .original p .oriprice {
+  text-decoration:line-through;
+  color: #cbcbcb;
+}
+.price_box .pay .deal input{
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  vertical-align: sub;
+  border: 1px solid #444;
+  color: #444;
+}
+.price_box .pay .deal span {
+  color: #458af1;
+}
+.productBuy .button {
+  background: #7ab45d;
+  min-width: 108px;
+  width: auto;
+  height: 48px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 25px;
+  display: inline-block;
+}
+.productBuy .button:hover {
+  background: #7ec35e;
+}
+.productBuy .pay .button {
+  margin-top: 45px;
+  float: right;
+}
+/* 支付页面 */
+.pay_box {
+    width: 890px;
+    margin: 0 auto;
+    background: #f2fded;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 210px;
+    margin-bottom: 50px;
+}
+.pay_box .symbol {
+  width: 100px;
+  display: inline-block;
+  vertical-align: initial;
+  margin-right: 100px;
+}
+.pay_box .prompt {
+  display: inline-block;
+}
+.pay_box .prompt .fail {
+  color: #d51c1c;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.pay_box .prompt .success {
+  color: #ff7c1c;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.pay_box .prompt .info {
+  margin-bottom: 25px;
+}
+.pay_box .prompt p {
+  font-size: 14px;
+  color: #676866;
+  display: inline-block;
+  margin-right: 25px;
+}
+.pay_box .prompt a {
+  color: #327ed3;
+}

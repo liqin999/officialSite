@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="/dist/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/pages/index/head.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/pages/index/footer.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/pages/Shopping/shopping.css">
+    <link type="text/css" rel="stylesheet" href="/dist/css/pages/Shopping/styles.css">
+    <link rel="stylesheet" type="text/css" href="/public/Validform/css/style.css">
+
+    <script type="text/javascript" src="/library/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/dist/js/index.js"></script>
+    <script type="text/javascript" src="/dist/js/pages/index/init.js"></script>
+    <script type="text/javascript" src="/dist/js/pages/Shopping/shop_com.js"></script>
+</head>
+
+<body>
+    <div class="y_container">
+        <!--#include virtual="/public/header.html"-->
+    </div>
+    <div class="productBuy">
+        <div class="yqm">
+            <p class="tit"><img src="../../dist/img/Shopping/head1.png" alt=""></p>
+        </div>
+        <div class="buy_box">
+            <div class="logo"></div>
+            <div class="line"></div>
+            <div class="choose">
+                <div class="version">
+                    <span class="name">服务版本</span>
+                    <label>
+                        <input type="radio" name="1" data-value="198"><span>基础版</span></label>
+                    <label class="last">
+                        <input type="radio" name="1" data-value="598"><span>专业版</span></label>
+                </div>
+                <div class="time">
+                    <span class="name">服务周期</span>
+                    <label>
+                        <input type="radio" name="2" data-value="3"><span>3个月</span></label>
+                    <label>
+                        <input type="radio" name="2" data-value="12"><span>1年</span></label>
+                    <label>
+                        <input type="radio" name="2" data-value="24"><span>2年</span></label>
+                    <label class="last">
+                        <input type="radio" name="2" data-value="36"><span>3年</span></label>
+                </div>
+                <div class="way">
+                    <span class="name">交付方式</span>
+                    <label>
+                        <input checked="checked" type="radio" name="3"><span class="ebay"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="price_box">
+            <div class="pay">
+                <div class="selling">
+                    <em class="first"><span>购买详情：</span><span class="val_month">0个月</span></em>
+                    <p><span>合计：</span><span class="sellprice">￥0.00</span></p>
+                </div>
+                <div class="original">
+                    <span class="or_ic hide"><i class="icon"></i>[8.5折]</span>
+                    <p><span class="oriprice">原价：￥0</span></p>
+                </div>
+                <div class="deal">
+                    <label>
+                        <input type="checkbox" name="4" checked="checked">
+                        <p>已阅读认可<span><a href="javascript:;">《客户购买协议》</a></span></p>
+                    </label>
+                </div>
+                <div class="button shap_btn">去付款</div>
+            </div>
+        </div>
+    </div>
+    <div class="y_container">
+        <!--#include virtual="/public/footer.html"-->
+    </div>
+ <div class="fixed_shape">
+        <div class="shape_black"></div>
+        <div class="pop_window">
+            <div class="shape_close">x</div>
+            <div class="title">支付结果</div>
+            <div class="line"></div>
+            <div class="button"><span class="green">支付成功</span><span class="red">支付失败，重新支付</span></div>
+            <div class="questions">
+                <p class="title"><i class="faq"></i>问题解答</p>
+                <div class="ques">
+                    <p class="ask">1.网上银行页面打不开，或者打开无法支付，怎么办？<span class="open">展开</span></p>
+                    <p class="ans"></p>
+                </div>
+                <div class="ques">
+                    <p class="ask">2.总是支付失败，提示银行卡限额怎么办？<span class="fold">收起</span></p>
+                    <p class="ans">答：银行卡限额是指某银行对该行银行卡单笔消费额度的限制，如果您的银行卡限 额不足，您可以充值去哪儿网余额账户，充值足额后再使用余额支付来完成交易。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="/public/login.html"-->
+    <!--#include virtual="/public/fixeds.html"-->
+    <!--#include virtual="/public/tongji.html"-->
+</body>
+
+</html>
+

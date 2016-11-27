@@ -1,0 +1,50 @@
+﻿/*右侧整体结构、弹窗表单类页面
+<div class="info-container">
+	<ul class="Tab-ul">
+		<li>会员信息</li>
+		<li>收货地址</li>
+	</ul>
+	<div class="info">
+		表单内容
+	</div>
+	<div class="btn-sub">底部按钮，如果水平居中，追加class btnCenter</div>
+</div>
+*/
+.info-container{border: 1px solid #ddd;overflow: hidden}
+/***选项卡的公共样式***/
+.Tab-ul{height: 28px; border-bottom: 1px solid #ddd; text-align: center; margin: 20px 10px 0;}
+.Tab-li{cursor: pointer; float: left; height: 28px; line-height: 28px; padding-left: 15px; padding-right: 15px; color: #666; border-bottom: 1px solid #d2d7dd; border-radius: 3px 3px 0 0; background-color: #fff;}
+.Tab-li-first{margin-left: 50px;}
+.Tab-li-select{border: 1px solid #d2d7dd; border-bottom: none; color: #2f79b6; font-size: 14px;}
+
+/*新增，修改信息，弹层内容类页面
+<li class="account">
+	<span class="title">用户名：</span>
+	<div class="text-oper">
+		<input name="account" type="text" class="txt input1" />
+		<div class="tip"><i></i></div>
+	</div>
+	<div class="default-tip"><i title="支持中文、字母、数字、“-”、“_”的组合，4-20个字符"></i></div>
+</li>
+*/
+.info{margin-top:20px; width:100%;}
+.info>ul{margin:0; padding:0;}
+.info>ul>li{float:left; width:100%;margin:5px auto;}
+.info .title{float: left; line-height:26px; text-align: right; width:89px; color:#666;}
+.info .text-oper{float: left; margin-left:2px; line-height:26px;}
+
+.info .default-tip{display: inline-block;margin-left: 5px;color: #a9a9a9;line-height:20px;height:20px;margin-top:4px; }
+/*.info .default-tip i{display:inline-block;width:20px;height:20px;background:url(../images/mainSprite.png) no-repeat -9px -108px;vertical-align:-5px;}*/
+.info .err>.default-tip{display:none;}
+.info .succ>.default-tip{display:none;}
+.info .err-tip{color:#f13848;display:none;margin-left:5px;}
+.info .err>.txt{border-color:#f13838;}
+.info .err>.err-tip{display:inline-block;}
+.info .err>.err-tip>i{ display: inline-block;background:url(../images/mainSprite.png) no-repeat -140px -112px;width:15px;height:15px;vertical-align:-3px;}
+/*.info .err>div i{display:inline-block;width:15px;height:15px;vertical-align:-3px;}*/
+.info .radio{margin-right: 3px; vertical-align: -2px;}
+.info .sellevel{vertical-align: middle; width: 250px; border: 1px solid #ddd; height: 26px; line-height: 26px; padding: 0 2px; color:#ddd;}
+.btn-sub{text-align:center; margin-top:10px; margin-left: 88px; margin-bottom: 24px;float: left}
+.btn-sub.btnCenter{text-align:center;}
+.gen-sureBtn{margin-right: 15px}
+.clearBoth{clear:both; width:100%; height:0; line-height:0; font-size:0; overflow:hidden;}

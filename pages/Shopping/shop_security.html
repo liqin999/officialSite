@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/dist/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/dist/css/pages/index/head.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/animate_con.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/pages/Shopping/shop_member.css">
+	<script type="text/javascript" src="/library/jquery/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/dist/js/pages/Shopping/shop_com.js"></script>
+</head>
+ 
+<body>
+	<div class="shop_container">
+		<div class="shop_c_head">
+			<div class="shop_header">
+				<h3><a href="../../index.html"><img src="../../dist/img/Shopping/shop_logo.png" alt="shop_logo"></a></h3>
+				<ul class="shop_nav">
+						<li><a href="shop_mall.html">商城信息</a></li>
+						<li><a href="javascript:;">我的订单</a></li>
+						<li class="cbk"><a href="javascript:;">安全设置</a></li>
+						<li><a href="shop_news.html">消息中心</a></li>
+				</ul>
+				<div class="shop_user">
+					<div class="user_down">
+						<span>xueyufeng</span>
+					</div>
+					<a class="shop_user_back" href="javascript:;">退出</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="shop_c_main">
+			<div class="shop_min">
+				<p>安全设置<span>Security setting</span></p>
+				<div class="shop_security">
+					<ul class="security_uls">
+						<li class="sec_phone"><span class="incon yes"></span><span class="sec_left">绑定手机</span><span class="sec_le2">13811461043<br><a href="javascript:;"></a></span></li>
+						<li class="sec_email"><span class="incon yes"></span><span class="sec_left">绑定邮箱</span><span class="sec_le2">5126322@qq.com<br><a class="yes_bind" href="javascript:;">立即绑定</a></span></li>
+						<li class="sec_email_no"><span class="incon no"></span><span class="sec_left">绑定邮箱</span><span class="sec_le2 no">未绑定邮箱<br><a class="no_bind" href="javascript:;">立即绑定</a></span></li>
+						<li class="sec_lock"><span class="incon right"></span><span class="sec_left">重置密码</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="popUp">
+		<div class="pop_bg"></div>
+		<div class="pop_box pop_email1 animated_con">
+			<div class="pop_box_con">
+				<h3>绑定邮箱</h3>
+				<div class="pop_con">
+					<p class="pop_min">
+					<label for="pop1">邮箱验证</label><span class="pop1_con">xueyufeng@300.cn</span>
+					</p>
+					<p class="pop_change">
+					<label for="pop2">邮箱验证</label><input class="pop_2" id="pop2" type="text" placeholder="验证码"><em class="pop2_yz">立即发送验证码</em>
+					</p>
+				</div>
+				<p class="pop_end"><span class="big_btn email1_yes">下一步</span><span class="big_btn email1_no">取消</span></p>
+			</div>
+			
+		</div>
+		<div class="pop_box pop_email2 animated_con">
+			<div class="pop_box_con">
+				<h3>绑定邮箱</h3>
+				<div class="pop_con">
+					<p class="pop_min">
+						<label for="pop3">新登录邮箱</label><input id="pop3" class="pop_3" type="text" value="300.cn">
+					</p>
+					<p class="pop_change">
+						<label for="pop4">邮箱验证码</label><input class="pop4" id="pop4" type="text" placeholder="验证码"><em class="pop4_yz">立即发送验证码</em>
+					</p>
+				</div>
+				<p class="pop_end"><span class="big_btn email2_yes">确定</span><span class="big_btn email2_no">取消</span></p>
+			</div>
+			
+		</div>
+		<div class="pop_box pop_pasd animated_con">
+			<div class="pop_box_con">
+				<h3>绑定邮箱</h3>
+				<div class="pop_con">
+					<p class="pop_min">
+						<label for="pop5">验证方式</label><input type="text" id="pop5" value="13302258154">
+					</p>
+					<p class="pop_change">
+						<label for="pop6">验证码</label><input class="pop6" id="pop6" type="text" placeholder="验证码"><em class="pop6_yz">立即发送验证码</em>
+					</p>
+					<p class="pop_psd2">
+						<label for="pop7">新密码</label><input type="password" id="pop7">
+					</p>
+				</div>
+				<p class="pop_end"><span class="big_btn pasd_yes">确定</span><span class="big_btn pasd_no">取消</span></p>
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>

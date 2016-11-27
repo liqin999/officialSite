@@ -1,0 +1,52 @@
+/*弹出框结构
+<div class="box w-450 small-box" >
+    <!-- 标题区 -->
+    <div class="box-title  ft-12">
+        <h2 class="box-h2 f-l">导出会员</h2>
+        <span class="box-close f-r"></span>
+    </div>
+    <!-- 内容区 --> 
+    <div class="box-con">      
+    </div>    
+    <!-- 按钮区 -->
+    <div class="box-btn">
+        <span class="gen-sureBtn boxSave">导出</span>
+    </div>    
+</div>
+*/
+/*弹出框公用*/
+.mask{position:fixed;width:100%;height:100%;top:0;left:0;z-index:98;background: #000; filter:alpha(opacity=20);opacity: 0.2;display:none;}
+.box{;background:#FFF;z-index:99;border-radius:4px;padding: 15px;}
+.w-450{width: 420px;}
+.w-650{width: 620px;}
+.w-870{width: 840px;}
+.box-title{height: 22px;font-size: 14px;color: #424242;border-bottom: 1px solid #ddd; margin-bottom: 10px; position:relative;}
+.box-h2{ font-size: 14px; color: #333; }
+.box-close{background: url(../images/closeBtn.png) no-repeat 0 0; width: 12px; height: 12px; overflow: hidden; cursor: pointer;position:absolute;right:0;top:5px;}
+.box-btn{width: 100%;height: 26px; overflow: hidden; display: block; text-align: center; margin: 20px auto 5px auto;}
+.w120{ width: 120px!important;}
+.w200{ width: 200px!important;}
+.h-570{height: 570px}
+.h-400{height: 400px}
+.h-705{height: 705px}
+.h-466{height: 466px}
+.h-420{height: 420px}
+.box-w870-h706-center{left: 50%;top: 50%;margin-top: -353px;margin-left: -435px}
+.box-w870-h466-center{left: 50%;top: 50%;margin-top: -223px;margin-left: -435px}
+.box-w450-h400-center{left: 50%;top: 50%;margin-top: -200px;margin-left: -225px}
+.box-w650-h570-center{left: 50%;top: 50%;margin-top: -300px;margin-left: -325px}
+.box-w650-h530-center{left: 50%;top: 50%;margin-top: -265px;margin-left: -325px}
+.box-w650-h500-center{top: 50%;left: 50%;margin-top: -250px;margin-left: -325px}
+.box-w650-h420-center{top:50%;left:50%;margin-left: -325px;margin-top: -225px}
+
+/***配置列表***/
+.boxDown {width: auto;height: auto;overflow: hidden;/* margin-left: 10px; */padding: 0px 0 10px 16px;display: block;background: url("../images/setListDown.png") no-repeat 6px 3px;}
+.boxCont {overflow-y: auto;height: 391px;}
+.boxList-move{ width: 6px;height: 14px;background: url("../images/setListDot.png") no-repeat 0 0;margin-top: 6px;*margin-top: 3px!important; margin-left: 10px;cursor: move;}
+.boxR {/* margin-left: 15px; */vertical-align: middle;height: 25px;line-height: 25px;width:375px;border: 1px solid #ddd;border-bottom: none;}
+.boxR:hover{ background: #f0f0fc;}
+.boxR:last-child {border-bottom: 1px solid #ddd;}
+.boxLast{border-bottom: 1px solid #ddd;}
+.box-check{margin-left: 10px;margin-right: 5px;float: left;margin-top: 6px;*margin-top: 3px!important;}
+.boxCol{background-color: #fefef4;color: #666;padding-left: 6px;}
+/****配置列表项结束**/

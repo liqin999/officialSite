@@ -1,0 +1,135 @@
+@charset "UTF-8";
+body {
+  font-family: "Microsoft Yahei", 微软雅黑, arial;
+  margin: 0;
+  color: #666;
+  font-size: 12px;
+  background: #FFF;
+}
+
+ul, dl, dt, dd, p, h2, form {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+em, i, b {
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.y_container .y_con > div {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.fot {
+  height: 346px;
+  background: url(../../../img/index/fot_bg1.png) repeat-x;
+}
+
+.fot .footer {
+  padding-top: 42px;
+}
+
+.fot .footer .fot_lo {
+  padding-left: 72px;
+  height: 44px;
+  margin-bottom: 66px;
+}
+
+.fot .footer .fot_lo li {
+  float: left;
+  width: 120px;
+  height: 46px;
+  margin-right: 72px;
+  text-indent: 55px;
+  line-height: 46px;
+  color: #eeecec;
+  background-color: #acacac;
+  font-size: 18px;
+}
+
+.fot .footer .fot_lo li.fot_li1 {
+  background: url(../../../img/index/foot.png) no-repeat;
+}
+
+.fot .footer .fot_lo li.fot_li2 {
+  background: url(../../../img/index/foot.png) no-repeat 0 -47px;
+}
+
+.fot .footer .fot_lo li.fot_li3 {
+  background: url(../../../img/index/foot.png) no-repeat 0 -98px;
+}
+
+.fot .footer .fot_lo li.fot_li4 {
+  background: url(../../../img/index/foot.png) no-repeat 0 -148px;
+}
+
+.fot .footer .fot_lo li.fot_li5 {
+  background: url(../../../img/index/foot.png) no-repeat 0 -199px;
+}
+
+.fot .footer .fot_lo li.fot_li6 {
+  background: url(../../../img/index/foot.png) no-repeat 0 -249px;
+  margin-right: 0;
+}
+
+.fot .footer p {
+  /*  text-align: center;*/
+  color: #fafafa;
+  line-height: 20px;
+}
+
+.fot .footer p.fo_p {
+  line-height: 32px;
+}
+
+.fot .footer p.fo_p a {
+  padding: 0 25px;
+  color: #fafafa;
+}
+
+
+.fot .footer p.fo_p a.pd0{
+  padding-left: 0;
+}
+.fot .footer p.fo_p a:hover {
+  color: #fff;
+}
+
+.a-nostyle {
+  text-underline: none;
+}
+
+.a-nostyle {
+  color: #9c9c9c;
+}
+
+.a-nostyle:hover {
+  color: #fff;
+}
+.fot .footer.fot_text{
+
+}
+.ft-14{font-size: 14px}
+.fot .footer .fot_text .foot_l{float: left;width: 676px;height: 155px;padding-top: 35px;padding-left: 60px;}
+.fot .footer .fot_text .foot_r{float: left;width:438px ;height: 146px;padding-top: 44px;padding-left: 26px}
+.fot .footer .foot_l .link_foot a{ padding: 0 5px;    color: #fafafa;}
+.fot .footer .fot_text .foot_r .txt1{font-size: 18px;color: #fafafa}
+.fot .footer .fot_text .foot_r .txt2{font-size: 20px;color: #fafafa;margin-top: 10px}
+.fot .footer .fot_text .foot_r .tels{width: 218px;float: left}
+.fot .footer .fot_text .foot_r .small_tel{position: relative;top: 5px;display: inline-block;width: 20px;height: 18px;background: url("../../../img/index/small_tel.png") no-repeat}
+.fot .footer .fot_text .foot_cr{margin-top: 4px;margin-bottom: 6px}
+.fo_p a:hover{text-decoration: underline}
+.link_foot a:hover{text-decoration: underline}
+
+

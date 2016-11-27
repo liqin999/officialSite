@@ -1,0 +1,88 @@
+﻿/*按钮*/
+/*重要按钮 being*/
+.imp-sureBtn{height: 34px;line-height: 34px;padding: 0 25px;font-size: 14px;color: #fff;background-color: #4587da;border-radius: 2px;cursor: pointer;display: inline-block;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;-khtml-user-select: none;}
+.imp-sureBtn:hover{background-color: #4b91eb;}
+.imp-sureBtn:active{background-color: #3c78c4;}
+/*cancelBtn*/
+.imp-cancelBtn{height: 32px;line-height: 32px;padding: 0 23px;font-size: 14px;color: #666;background-color: #fff;border: 1px solid #ddd;border-radius: 2px;cursor: pointer;display: inline-block;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;-khtml-user-select: none;}
+.imp-cancelBtn:hover{border: 1px solid #4587da;color: #4587da;}
+/*guiBtn*/
+.imp-guiBtn{height: 32px;line-height: 32px;padding: 0 23px;font-size: 14px;color: #666;background-color: #ededed;border: 1px solid #ccc;border-radius: 2px;cursor: pointer;display: inline-block;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;-khtml-user-select: none;}
+.imp-guiBtn:hover{border: 1px solid #4587da;color: #4587da;}
+/*禁用按钮*/
+.imp-forbiddenBtn{height: 34px;line-height: 34px;padding: 0 25px;font-size: 14px;color: #bababa;background-color: #e8e7ec;border-radius: 2px;cursor: pointer;display: inline-block;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;-khtml-user-select: none;}
+/*重要按钮 end*/
+
+/*普通按钮 begin*/
+/*sureBtn*/
+.gen-sureBtn{height: 26px;line-height: 26px;padding: 0 15px;font-size: 14px;color: #fff;background-color: #4587da;border-radius: 2px;cursor: pointer;display: inline-block;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;-khtml-user-select: none;}
+.gen-sureBtn:hover{background-color: #4b91eb;}
+.gen-sureBtn:active{background-color: #3c78c4;}
+/*cancelBtn*/
+.gen-cancelBtn{height: 24px;line-height: 24px;padding: 0 13px;font-size: 14px;color: #666;background-color: #fff;border: 1px solid #ddd;border-radius: 2px;cursor: pointer;display: inline-block;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;-khtml-user-select: none;}
+.gen-cancelBtn:hover{border: 1px solid #4587da;color: #4587da;}
+/*guiBtn*/
+.gen-guiBtn{height: 24px;line-height: 24px;padding:0 13px;font-size: 14px;color: #666;background-color: #ededed;border: 1px solid #ccc;border-radius: 2px;cursor: pointer;display: inline-block;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;-khtml-user-select: none;}
+.gen-guiBtn:hover{border: 1px solid #4587da;color: #4587da;}
+/*禁用按钮*/
+.imp-forbiddenBtn{height: 26px;line-height: 26px;padding: 0 15px;font-size: 14px;color: #bababa;background-color: #e8e7ec;border-radius: 2px;cursor: pointer;display: inline-block;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;-khtml-user-select: none;}
+/*普通按钮 end*/
+
+
+
+/*复选框
+未选中<i class="checkbox" v="选定的值"></i>
+选中<i class="checkbox checked" v="选定的值" ></i>
+*/
+.checkbox{display:inline-block;width:12px;height:12px;overflow:hidden;background:url(../images/mainSprite.png) no-repeat -40px -75px;}
+.checkbox.checked{background-position:-40px -53px;}
+
+/*单行文本*/
+.txt{height: 24px; line-height: 24px; border: 1px solid #ddd; padding: 0 10px; font-size: 12px; color: #a9a9a9;outline: none;}
+.txtFocus{color:#666;}
+.txt:hover{border: 1px solid #4587da;}
+.readonlytxt{height: 24px; line-height: 24px; border: 1px solid #ddd; padding: 0 10px; font-size: 12px; color: #a9a9a9;outline: none;color: #666 }
+/*单选按钮*/
+.radio{margin-right: 3px; vertical-align: -2px;}
+/*多行文本*/
+.textarea{border: 1px solid #ddd;padding: 10px;resize: none}
+.textarea:hover{border-color: #4587da}
+
+/*模拟select
+<div class="select">
+	<span>请选择</span>
+	<i></i>
+	<ul>
+		<li v="选中之后真实值">北京市</li>
+		<li v="选中之后真实值">上海市</li>
+	</ul>
+</div>
+*/
+.select{display:inline-block;border:1px solid #ddd;border-radius:2px;position:relative;height:26px;cursor:pointer;background:#FFF;}
+.select>span{display:block;line-height:16px;font-size:12px;height:16px;padding:5px;padding-right:17px;}
+.select>i{display:block;position:absolute;width:20px;height:20px;background:url(../images/mainSprite.png) no-repeat 5px -46px;right:3px;top:3px;}
+.select:hover,.select.sel{border:1px solid #4587da;border-radius:2px 2px 0px 0px;}
+.select:hover>span,.select.sel>span{color:#4587da;}
+.select:hover>i,.select.sel>i{background-position:5px -23px;}
+.select>ul{position:absolute;border:1px solid #4587da;border-top:none;left:-1px;background:#FFF;display:none;width:100%;max-height:420px;overflow-y: auto;z-index: 10000}
+.select>ul li{line-height:26px;padding:0px 5px; white-space:nowrap;}
+.select>ul li:hover,.select>ul li.sel{background:#4587da;color:#FFF;}
+.select>ul a{display:block;width:100%;height:100%;}
+.select>ul li:hover a,.select>ul li.sel a{color:#FFF;}
+
+/*input图片上传 file美化
+<span class="title">上传图片：</span>
+<div class="uploader">
+    <a href="javascript:;" class="file fl">选择图片<input type="file" name="" id=""></a>
+    <div class="default-tip fl">建议每次添加尺寸相同</div>
+    <span class="uploaderImg fl"><img src="../images/default_image.jpg" /></span>
+</div>
+*/
+/* 表单必填项 * 颜色 */
+.red{ color: #ff0000; margin-right: 3px;}
+.uploader { position:relative; display:inline-block; margin-left: 2px;}
+.uploader .file {position: relative;display: inline-block;border: 1px solid #ddd;border-radius: 1px;padding: 0px 26px; overflow: hidden; color: #666;text-decoration: none;text-indent: 0;line-height: 26px;cursor: pointer;}
+.uploader .file:hover{color: #1E88C7;border: 1px solid #1E88C7;}
+.uploader .file input { position: absolute; font-size: 100px; right: 0; top: 0; opacity: 0; cursor:pointer; filter:alpha(opacity=0);/* 兼容IE */ }
+.uploaderImg{ width:104px; height: 104px; border:1px #ccc dashed; clear: left; display: block; margin-top: 5px;}
+.uploaderImg img{ max-height: 104px; max-width: 104px; vertical-align: middle;}

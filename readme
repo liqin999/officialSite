@@ -1,0 +1,7 @@
+官网和模板市场
+代码为HTML静态文件
+/cfg/env.json是相关功能JS的公共配置文件
+内容如下
+{"httpHost":"http://my.shopce.cn","subPath":"/index.php/Ucenter"}
+httpHost 会员中心态支撑的访问地址
+subPath  会员中心得默认二级路径

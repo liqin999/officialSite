@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/dist/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/pages/index/head.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/pages/Shopping/shop_member.css">
+
+	<script type="text/javascript" src="/library/jquery/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/dist/js/pages/index/init.js"></script>
+	<script type="text/javascript" src="/dist/js/index.js"></script>
+	<script type="text/javascript" src="/dist/js/pages/Shopping/shop_com.js"></script>
+
+</head>
+
+<body>
+	<div class="shop_container">
+		<div class="shop_c_head">
+			<div class="shop_header">
+				<h3><a href="../../index.html"><img src="../../dist/img/Shopping/shop_logo.png" alt="shop_logo"></a></h3>
+				<ul class="shop_nav">
+						<li class="cbk"><a href="javascript:;">商城信息</a></li>
+						<li><a href="#shop_order">我的订单</a></li>
+						<li><a href="shop_security.html">安全设置</a></li>
+						<li><a href="shop_news.html">消息中心</a></li>
+				</ul>
+				<div class="shop_user">
+					<div class="user_down">
+						<span>xueyufeng</span>
+					</div>
+					<a class="shop_user_back" href="javascript:;">退出</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="shop_c_main">
+			<div class="shop_main">
+				<div class="shop_top">
+					<div class="shop_store">
+						<div class="shop_store_con">
+							<p class="shop_store_con_tit">商城信息</p>
+							<div class="shop_store_con_min">
+								<div class="shop_s_tp">
+									<div class="shop_s_tp_left">
+										<p>商城域名：<a class="so_yuming" href="javascript:;">adc.yqmaivip.com</a></p>
+										<p>商城后台：<a class="so_houtai" href="javascript:;">adc.yqmaivip.com/manage/login</a></p>
+									</div>
+									<div class="shop_s_tp_right">
+										<a class="big_btn shop_yuming" href="javascript:;">绑定域名</a><a class="big_btn shop_shangcheng" href="javascript:;">访问商城</a><a class="big_btn shop_houtai" href="javascript:;">进入后台</a>
+									</div>
+								</div>
+								<p class="shop_s_bt">
+									<span><a class="small_btn shop_xufei" href="javascript:;">续费</a><a class="small_btn shop_shengji" href="javascript:;">升级</a></span>当前版本&nbsp;&nbsp;试用&nbsp;&nbsp;有效期至<em> 2016年 5月 30日 24：00</em>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="shop_prise">
+					<p class="shop_prise_con_tit">企业信息</p>
+					<div class="shop_store_con_min">
+						<div class="prise_name">
+							<span class="shop_mvc">企业名称：</span><span class="shop_old">abc.yqmaivip.com</span><span class="shop_new"><input type="text" placeholder="abc.yqmaivip.com"></span>
+						</div>
+						<div class="prise_address">
+							<span class="shop_mvc">所在地区：</span><span class="shop_old">山东省<em class="line"></em>威海市</span><span class="shop_new">
+							<select name="" id="">
+								<option value="">山东省</option>
+								<option value="">山西省</option>
+								<option value="">广东省</option>
+								<option value="">云南省</option>
+							</select>
+							<select name="" id="">
+								<option value="">威海市</option>
+								<option value="">大连市</option>
+								<option value="">青岛市</option>
+								<option value="">冀州市</option>
+							</select>
+							</span>
+						</div>
+						<div class="prise_hy">
+							<span class="shop_mvc">所在行业：</span><span class="shop_old">制造业<em class="line"></em>农副食品加工</span><span class="shop_new">
+								<select name="" id="">
+								<option value="">制造业</option>
+								<option value="">服务业</option>
+								<option value="">农业</option>
+								<option value="">重工业</option>
+							</select>
+							<select name="" id="">
+								<option value="">农副食品加工</option>
+								<option value="">旅游</option>
+								<option value="">酒店</option>
+								<option value="">花卉</option>
+							</select>
+							</span>
+						</div>
+						<div class="prise_license">
+							<span class="shop_mvc">营业执照：</span><span class="shop_old"><em class="shop_img_con"><img src="../../dist/img/Shopping/shop_zhizhao.png"><i></i><b class="shop_enlarge"></b></em></span>
+							<span class="shop_new">
+								<em class="shop_add"><img src="../../dist/img/Shopping/zhizhao_2.png"><i><input class="shop_add_file" type="file"></i></em>
+								<em class="shop_add_change"><img src="../../dist/img/Shopping/shop_zhizhao.png"><i class="sc_img"><img src="../../dist/img/Shopping/zhizhao_3.png"></i><i class="sc_file"><input class="shop_add__change_file" type="file"></i></em>
+							</span>
+						</div>
+						<em class="shop_ctn"><span class="small_btn shop_change">修改</span><span class="small_btn shop_baocun shop_hide">保存</span></em>
+					</div>
+				</div>
+				<div class="shop_order" id="shop_order">
+					<p class="shop_order_con_tit">订单信息</p>
+					<div class="shop_order_min">
+						<ul class="shop_order_uls">
+							<li class="lis_od_1">
+								<span class="lis_or_1">订单编号</span><span class="lis_or_2"></span><span class="lis_or_3">支付时间</span><span class="lis_or_4">订单金额</span><span class="lis_or_5">订单状态</span><span class="lis_or_6">操作</span>
+							</li>
+							<li class="lis_od_2">
+								<span class="lis_or_1">12990078</span><span class="lis_or_2 line"></span><span class="lis_or_3">2016-06-07-14:20</span><span class="lis_or_4">￥2500.00元</span><span class="lis_or_5">已支付</span><span class="lis_or_6"></span>
+							</li>
+							<li class="lis_od_3">
+								<span class="lis_or_1">12990078</span><span class="lis_or_2"></span><span class="lis_or_3">2016-06-07-14:20</span><span class="lis_or_4">￥2500.00元</span><span class="lis_or_5">未支付</span><span class="lis_or_6"><em class="small_btn order_again">重新支付</em></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+<!--  图片放大遮罩层 -->
+<!-- <div class="shop_fixed_img">
+	<div class="block"></div>
+	<div class="fixed_img_con">
+		<span class="close">x</span>
+		<img src="../../dist/img/Shopping/shop_zhizhao.png" alt="">
+	</div>
+</div> -->
+<!--  绑定域名遮罩层 -->
+<div class="fixed_dom fixed_doman_sj">
+	<div class="black"></div>
+	
+	<div class="fixed_doman_con">
+		<span class="close">x</span>
+		<h3>亲爱的用户：</h3>
+		<p>请先升级付费用户以后，可以使用绑定自有域名功能!</p>
+		<span class="big_btn fixed_doman_sj_btn">点击升级</span>
+	</div>
+	
+</div>
+<div class="fixed_dom fixed_doman_tj">
+	<div class="black"></div>
+	
+	<div class="fixed_doman_con">
+		<span class="close">x</span>
+		<h4>欢迎绑定您的自有域名</h4>
+		<p><label for="tx1">自有域名</label><input class="tit" id="tx1" type="text"></p>
+		<p class="pc2"><label for="tx2">备案号</label><input class="txt" id="tx2" type="text"><span><em>例如:京ICP备15015325号</em></span></p>
+		<span class="big_btn fixed_doman_tj_btn">提交</span>
+		<p class="ps1">提示:在您的域名管理提供商的解析设置中<br><span>记录类型为:CNAME</span><br><span>记录值为:cname.yqmaivip.com</span></p>
+		<p class="ps2">如果您的域名还没有备案，请先备案，如需帮助，请联系本站客服！</p>
+	</div>
+</div>
+</body>
+<!--#include virtual="/public/login.html"-->
+<!--#include virtual="/public/fixeds.html"-->
+<!--#include virtual="/public/tongji.html"-->
+</html>

@@ -1,0 +1,35 @@
+/*左侧*/
+.sideBar{position:fixed;width:186px;height:100%;top:0;left:0;border-right:1px solid #ddd;}
+
+.sideList{padding-top:50px;}
+.sideList dt{line-height:41px;position:relative;height:41px;cursor:pointer;padding:0 20px;font-size:14px;}
+.sideList dt i{display:block;position:absolute;right:20px;width:8px;height:5px;top:18px;overflow:hidden;background:url(../images/iconSprite.png) no-repeat 0px -60px;}
+.sideList dt:hover{background:#d7d7d7;color:8d8d8d;}
+.sideList dt.dtcurr{height:40px;border-bottom:1px solid #DDD;}
+.sideList dt.dtcurr i{background-position:-20px -60px;}
+.sideList dd{display:none;}
+.sideList dd a{padding:0 20px 0 38px;line-height:33px;height:33px;display:block;}
+.sideList dd a:hover,.sideList dd.ddcurr a{background:#eee url(../images/iconSprite.png) no-repeat -113px 12px;color:#3d6fcc;}
+
+/*顶部*/
+.header{height:50px;border-bottom:1px solid #DDD;text-align:right;position:relative;}
+.logo{width:250px;height:50px;display:block;background:#FFF;top:0px;left:0px;position:absolute;}
+.logo>a{display:block;width:186px;height:26px;text-align:center;float:left;padding:12px 0px;}
+.logo img{display:inline-block;width:147px;height:26px;}
+.sideBarBtn{display:inline-block;width:62px;height:50px;background:url(../images/iconSprite.png) no-repeat 0px 0px;border:1px solid #DDD;border-width:0px 1px;cursor:pointer;}
+.header>span{display:inline-block;background-image:url(../images/iconSprite.png);background-repeat:no-repeat;width:22px;height:22px;margin:14px 30px 14px 0px;cursor:pointer;}
+.header .search{background-position:-66px 0px;}
+.header .alert{background-position:-63px -55px;}
+.header .msg{background-position:-68px -26px;position:relative;}
+.header .msg i{display:block;position:absolute;padding:2px 3px;background:#b6062c;color:#FFF;font-size:12px;line-height:12px;font-style:normal;top:-4px;right:-6px;}
+.header .logout{background-position:-65px -82px;}
+
+/*右侧整体框架*/
+.container{margin-left:187px;min-width:1093px;}
+.frameCont{margin:10px;}
+.mainFrame{width:100%;}
+
+/*底部版权
+<div class="copyright">内容</div>
+*/
+.copyright{font-size:16px;line-height:50px;border-top:1px solid #DDD;margin-left:187px;padding-left:15px;}

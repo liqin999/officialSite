@@ -1,0 +1,383 @@
+@charset "UTF-8";
+body{font-family:"Microsoft Yahei",微软雅黑,arial;margin:0;color:#666;font-size:12px;background:#FFF;}
+/*取消滚动事件 禁止向下滚动*/
+body.modal-open{overflow: hidden;padding-right: 17px;}
+ul,dl,dt,dd,p,h2,form{margin:0;padding:0;font-weight:normal;}
+ul,ol,li{list-style: none;}
+img{border:none;}
+em, i, b {
+    font-style: normal; }
+* {
+    margin: 0;
+    padding: 0; }
+body,html{
+    max-width: 2000px;margin:0 auto;
+}
+.y_container {
+    width: 100%; }
+.y_container .y_con > div {
+    width: 1200px;
+    margin: 0 auto; }
+.y_container .y_con.head {
+    background: #2b2b2b; }
+
+.y_header {
+    height: 80px;
+    overflow: hidden; }
+.y_header .y_logo {
+    float: left;
+    width: 140px;
+    height: 80px;
+    margin-left: 10px;
+    position: relative;
+}
+.y_header .y_logo .logo_test {
+    position: absolute;
+    width: 50px;
+    height: 27px;
+    left: 130px;
+    top: 30px;
+
+}
+.y_header .y_nav {
+    margin-left: 140px;
+    float: left;
+    height: 80px; }
+.y_header .y_nav > li {
+    float: left;
+    height: 75px;
+    border-top: 5px solid #2a2a2a;
+    width: 70px;
+    line-height: 80px;
+    text-align: center; }
+.y_header .y_nav > li a {
+    color: #fff;
+    font-size: 14px; }
+.y_header .y_nav > li:hover {
+    /* border-top: 5px solid #7fc25e;*/ }
+.y_header .y_nav > li:hover a{
+    color: #7fc25e; }
+.y_header .y_nav > li.cn{
+    border-top: 5px solid #7fc25e;}
+.y_header .y_nav > li.cn a{color: #7fc25e;}
+.y_header .y_nav > li.last a {
+    display: inline-block;
+    height: 80px;
+    width: 70px; }
+.y_header .y_nav > li.last{display: none}
+.y_header .y_nav > li.last a span {
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    background: url(../../../img/index/index_down_icon2.png) no-repeat right 3px; }
+.y_header .y_nav > li.last:hover span{
+    background: url(../../../img/index/index_down_icon.png) no-repeat right 3px; }
+
+.y_header > p {
+    float: right;
+    height: 57px;
+    padding-top: 23px;
+    margin-right: 3px; }
+.y_header > p span {
+    display: inline-block;
+    height: 35px;
+    cursor: pointer;
+    line-height: 35px;
+    padding: 0 17px;
+    color: #fff;
+    margin-left: 15px; }
+.y_header > p span.user {background: #7ab45d;border-radius: 2px; }
+.y_header > p span.user_in {background: #7ab45d;border-radius: 2px; }
+.y_header > p span.user.disabled{display: none;}
+.y_header > p span.user_in:hover {
+    background: #7ec35e; }
+.y_header > p em.y_suer {font-size: 14px;color: #fff;}
+.y_header > p em.y_suer.disabled {display: none;}
+.y_header > p span.us_ad {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    height: 33px;
+    line-height: 33px;
+    color:#dcdbdb;
+}
+.y_header > p span.us_ad:hover {
+    border: 1px solid #7ab45d;color:#fff;
+}
+/*登录注册页面样式*/
+.login_user{width: 100%;height: 100%;position: fixed;top: 0;left:0;overflow: auto;z-index: 1000}
+.login_user .login_user_black{width: 100%;height: 100%;background: #000;opacity: 0.5;
+    filter:alpha(Opacity=50);}
+.login_user.disabled{display: none;}
+.pupup{background:rgba(0,0,0,0.2);}
+.pupbox{ width: 600px; height: 656px; position: absolute; left: 50%; top:20px; margin-left: -300px;background:rgba(80,80,80,0.3); box-sizing: border-box;}
+.pupbox .login_close{position: absolute;font-weight: 800;width: 25px;height: 25px;line-height: 20px;text-align: center;right: 8px;top: 8px;cursor:pointer;text-shadow: 0 1px 0 #fff;font-size: 20px; color:#999;}
+.pupbox .login_close:hover{
+    text-shadow: 0 1px 0 #ccc;
+}
+.pupbox .login_in{
+    height: 44px;width: 100%;position: relative;margin-bottom: 17px;clear: both;
+}
+.pupbox.login{
+    height: 543px;
+}
+.pupbox .login_in label{
+    float:left;width: 64px;height: 44px;text-align: left;font-size: 14px;
+    line-height: 44px;color: #444;
+}
+.pupbox .login_in input.tet{
+    float:left;width: 426px;height: 44px;text-align: left;font-size: 14px;
+    line-height: 44px;border: 1px solid #ddd;text-indent: 10px;border-radius: 1px;font-weight:normal;
+}
+.pupbox .login_in input.yzm{
+    float:left;width: 223px;height: 44px;text-align: left;font-size: 14px;
+    line-height: 44px;border: 1px solid #ddd;text-indent: 10px;border-radius: 1px;font-weight:normal;
+}
+.pupbox .login_in .login_yzm{
+    width: 200px;height: 44px;border: 1px solid #ddd;border-left:none;float:left;
+}
+.pupbox .login_in .login_yzm em{
+    display: inline-block;margin:5px;
+}
+.pupbox .login_in .login_yzm a{
+    text-decoration: underline;color: #4587db;margin-left: 20px;
+}
+.pupbox .login_in .login_box{display: inline-block;width: 90px;height: 30px;margin-left: 64px;}
+
+.pupbox .login_in .login_box label{float: none;margin-left: 5px;}
+.pupbox .login_in .login_href{float: right;margin-right: 4px;font-size: 12px;margin-right: 16px}
+.pupbox .login_submit{
+    height: 46px; text-align: center; line-height: 46px; font-size: 20px; color: #fff;background: #b55c5c; display:block; border-radius: 3px;width: 100%;border:none;
+}
+.pupbox .user_login_p{margin-top: 10px;line-height: 40px;text-align: center;background-color: #fff}
+.pupbox .user_login_p a{color: #888;}
+
+
+.Validform_checktip{margin-left:0;}
+.info{
+    border:1px solid #ccc;
+    padding:2px 20px 2px 5px;
+    color:#666;
+    display: none;
+    position:absolute;
+    line-height:20px;
+    background-color:#fff;
+    left:200px;
+    bottom:-36px;
+}
+.dec {
+    top: -8px;
+    display: block;
+    height: 8px;
+    overflow: hidden;
+    position: absolute;
+    left: 10px;
+    width: 17px;
+}
+.dec s {
+    font-family: simsun;
+    font-size: 16px;
+    height: 19px;
+    left: 0;
+
+    line-height: 21px;
+    position: absolute;
+    text-decoration: none;
+    top: -2px;
+    width: 17px;
+}
+.dec .dec1 {
+    color: #ccc;
+}
+.dec .dec2 {
+    color: #fff;
+    top: 0px;
+}
+
+.login{padding: 25px; border-radius: 7px; font-size: 14px;}
+.login.disabled{display: none;}
+.login h2{padding:17px 0 12px 0; text-align: center;}
+.login .loginInput{background:#fff; padding: 25px 25px 10px 25px; border-radius: 3px;}
+.login .loginInput h3{height: 57px; font-size: 18px; color: #444; text-align: center;font-weight: normal;}
+
+
+
+
+.signUp{border-radius: 7px}
+.signUp.disabled{display: none;}
+.signUp h2{height: 40px; font-size: 18px; color: #fff;margin-bottom: 20px;padding-top:20px;padding-left:15px;}
+.signUp img{ margin-right: 16px; vertical-align: top;margin-left: 35px}
+.signUp .signInput, .find_pass_infor .signInput{background:#fff; padding:30px 23px 10px; border-radius: 3px;margin:0 20px;}
+
+
+.login_in.psd{position: relative;}
+.login_in.psd .pasd_com{position: absolute;right: 30px;top: 15px;display: none;}
+.pupbox .login_in .login_yzm.user_adv{text-align: center;line-height: 44px;background: #efefef;
+    color: #999999;font-size: 14px;cursor: pointer;}
+.pupbox .login_in.scwz{margin-bottom: 5px;}
+.pupbox .login_in.scwz .user_mcc{display: inline-block;width: 115px; line-height: 44px;font-size: 14px;text-align: center;}
+.pupbox .login_in.scwz .teac{  display: inline-block;width: 188px;height: 43px;font-size: 14px;
+    line-height: 43px;border: 1px solid #ddd;text-indent: 10px;border-radius: 1px;font-weight:normal;}
+.pupbox .user_p_right{text-align: right;line-height: 22px;color: #dd2726;padding-right: 24px;}
+.pupbox .user_p_yes{line-height: 36px;color: #999;}
+.pupbox .user_p_yes label{padding-left: 15px;}
+.pupbox .user_p_yes a{color: #4587db;}
+.pupbox .user_submit{  height: 46px; text-align: center; line-height: 46px; font-size: 18px; color: #fff;background: #7ab55c; display:block; border-radius: 3px;width: 100%;border:none;}
+@keyframes topeaseinAnimate{
+    0%{ transform: translateY(-2000px); opacity: 0;}
+    100%{ transform: translateY(0px); opacity: 1;}
+}
+@-webkit-keyframes topeaseinAnimate{
+    0%{ -webkit-transform: translateY(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+@-o-keyframes topeaseinAnimate{
+    0%{ -webkit-transform: translateY(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+@-ms-keyframes topeaseinAnimate{
+    0%{ -webkit-transform: translateY(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+@-moz-keyframes topeaseinAnimate{
+    0%{ -webkit-transform: translateY(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+.animatetop{
+    animation: topeaseinAnimate 1s ease 1;
+    -webkit-animation: topeaseinAnimate 1s ease 1;
+    -moz-animation: topeaseinAnimate 1s ease 1;
+    -ms-animation: topeaseinAnimate 1s ease 1;
+    -o-animation: topeaseinAnimate 1s ease 1;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+.login_com{font-size: 14px;}
+/*固定定位位置*/
+#fixed_tel{position: fixed;width: 200px;height: 60px;right: -140px;z-index: 20000;cursor:pointer;top:50%;margin-top: -60px;
+}
+#fixed_tel .fixed_tel_black{position: absolute;top: 0;left: 0;height: 60px;border-radius: 5px;background: #333;opacity: 0.4;width:200px;filter:alpha(Opacity=40);}
+#fixed_tel p{width:200px;position: absolute;top: 0;left: 0;height: 60px;border-radius: 5px;}
+#fixed_tel p span{float: left; width:60px;height: 60px;border-radius: 5px;background:url(../../../img/index/fixed_ico.png) no-repeat 2px -2px;}
+#fixed_tel p em{float: left; padding-top: 8px;line-height: 20px;font-size: 14px;color: #fff;}
+#fixed_tel p em i{font-size: 18px;}
+#fixed_tel:hover{right:0px}
+#fixed_tel:hover p span{background:url(../../../img/index/fixed_ico.png) no-repeat -58px -2px;}
+
+#fixed_top{width: 68px;height: 68px;position: fixed;z-index: 20000;bottom: 80px;cursor:pointer;display: none;top: 85%;right: 16px}
+#fixed_top div{width: 68px;height: 68px;background:url(../../../img/index/goBack.png) no-repeat;}
+#fixed_top div:hover{background:url(../../../img/index/goBack1.png) no-repeat;}
+
+/*新版的固定联系方式*/
+#fixed_contact{position: fixed;width: 128px;height:374px;right: 16px;z-index: 200;top:50%;margin-top: -150px;border: 1px solid #ddd;background: #fff;border-radius: 3px;
+}
+#fixed_contact #qqcon{position: relative;height: 180px;border-bottom: 1px solid #ddd;}
+
+#fixed_contact .close_con{position: absolute;width: 20px;height: 20px;top: 0px;right: 0px;z-index: 100}
+#fixed_contact .close_con{
+    background: url(../../../img/index/close_img.png) no-repeat left top;
+    display: block;
+    height: 24px;
+    width: 24px;
+    top:-15px;
+    right: 10px;
+    cursor: pointer;
+}
+#fixed_contact .qq{
+    width: 62px;
+    height: 70px;
+    overflow: hidden;
+    position: absolute;
+    left: 34px;
+    top: 38px;
+    z-index: 9;
+}
+
+#fixed_contact .qq_container{
+    background: transparent url(../../../img/index/qq-icon-bg.png) no-repeat scroll center 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 118px;
+    position: absolute;
+    width: 130px;
+    z-index: 5;
+    top: 30px;
+}
+
+#fixed_contact .img_qq {
+    display: block;
+    left: 1px;
+    max-width: 78px;
+    position: absolute;
+    top: 0px;
+    transition: all 0.5s ease 0s;
+    z-index: 20;
+    cursor: pointer;
+}
+#fixed_contact .qq:hover .img_qq{
+    transform: scale(1.2, 1.2) translateY(6px);
+    -o-transform: scale(1.2, 1.2) translateY(6px);
+    -moz-transform: scale(1.2, 1.2) translateY(6px);
+    -webkit-transform: scale(1.2, 1.2) translateY(6px);
+}
+
+#fixed_contact .qqbtn{width: 88px;height: 26px;border: 1px solid #7ab55c;margin-left: 20px;text-align: center;position: absolute;top: 140px;border-radius: 2px;cursor:pointer;background: #fff}
+#fixed_contact .qqbtn:hover{background: #7ab55c}
+#fixed_contact .qqbtn:hover .qq_cousult{color: #fff;}
+#fixed_contact .qqbtn:hover .smail_icon{
+    background: url(../../../img/index/smail_icon1.png) no-repeat center center
+}
+#fixed_contact .qqbtn .smail_icon{width: 16px;height: 18px;display: inline-block;background: url(../../../img/index/smail_icon.png) no-repeat center center;margin-top: 3px}
+#fixed_contact .qqbtn .qq_cousult{color: #7ab55c;vertical-align: 4px}
+
+#fixed_contact .register_btn{text-align: center;width: 126px;height:38px;line-height:38px;background-color: #7ab55c;font-size: 16px;color: #fff;cursor:pointer;position: absolute;bottom: 0px;left: 1px}
+#fixed_contact .phone{}
+#fixed_contact .phone .tel_tex{text-align: center;font-size: 14px;color: #484848;margin-top: 18px;}
+#fixed_contact .phone .tel_num{text-align: center;font-size: 14px;color: #6eb92b;margin-top: 8px}
+
+
+#fixed_fold_contact{display:none;position: fixed;width: 40px;height:132px;right: 16px;z-index: 200;top:50%;margin-top: -150px;background: #7ab55c;border-radius: 3px;word-wrap:break-word;letter-spacing: 18px }
+#fixed_fold_contact .close{position: absolute;width:26px;height:26px;top: -13px;left: 7px;background: url("../../../img/index/fix_close.png");cursor: pointer}
+#fixed_fold_contact .context{color: #fff;font-size: 18px;padding-left: 12px;padding-top: 20px}
+/*表单校验*/
+.pupbox .login_in{margin-bottom: 18px}
+.err input{border: 1px solid #f00 !important}
+.err .err-tip {color: #f00;}
+.err-tip {line-height: 20px !important;}
+.err .err-tip>span{margin-left: 56px}
+.relative{position: relative}
+.pupbox .login_in .sendSms{position: absolute;right: 22px;top: 0}
+.pupbox .login_in.scwz .teac{width: 200px}
+.pupbox .login_in.scwz .user_mcc2{position: absolute;top: 0px;right: 0px}
+
+/*找回密码*/
+.find_pass{width: 100%;height: 100%;position: fixed;top: 0;left:0;overflow: auto;z-index: 1000;display: none}
+.login_form>.login_in>p>a{color: #444}
+.login_form>.login_in>p>a:hover{color: #4587db}
+.find_pass_infor{display: block}
+.find_pass_infor>.signInput>h3{height: 57px; font-size: 18px;color: #444;text-align: center;font-weight: normal}
+.h500{height: 480px}
+.h410{height: 420px}
+.find_pass_infor h2{text-align: center;margin-top: 24px;margin-bottom: 10px}
+.pupbox .pass_submit {
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    color: #fff;
+    background: #7ab55c;
+    display: block;
+    border-radius: 3px;
+    width: 100%;
+    border: none;}
+/*modify 11.9 修改弹框*/
+.pupbox .login_in input:-webkit-autofill{-webkit-box-shadow: 0 0 0px 1000px white inset;}
+.pupbox{width: 600px;position: absolute;left: 50%;top: 12%;background:#666; }
+.pupbox .user_login_p{font-size: 14px;color: #888}
+.login_user{background-color: rgba(51,51,51,0.4);}
+.signUp .titleCen{display: inline-block;margin-left: 98px;margin-top: 3px;font-size: 24px}
+.pupbox .user_login_p a{color:#aa0909 }
+.pupbox .user_login_p a:hover{text-decoration: underline}
+.pupbox .h30{height: 30px}
